@@ -4,12 +4,8 @@ class observation {
     private:
         time_t t;
     public:
-        
-        observation(time_t _t) {
-            t = _t;
-        }
+        observation(time_t _t) ;
+        time_t get_t() ;
 
-        time_t get_t() {
-            return t;
-        }
+        static double dist(observation a, observation b);
 };
